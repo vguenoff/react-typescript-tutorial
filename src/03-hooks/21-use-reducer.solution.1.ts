@@ -13,7 +13,7 @@ const reducer = (
     | {
         type: "subtract";
         subtract: number;
-      }
+      },
 ) => {
   switch (action.type) {
     case "add":

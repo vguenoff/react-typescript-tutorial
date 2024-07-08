@@ -26,7 +26,7 @@ export const useData = <T,>(url: string): Result<T> => {
 
 const Component = () => {
   const [status, value] = useData<{ title: string }>(
-    "https://jsonplaceholder.typicode.com/todos/1"
+    "https://jsonplaceholder.typicode.com/todos/1",
   );
 
   if (status === "loading") {

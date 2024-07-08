@@ -22,7 +22,7 @@ export const Tags = () => {
                   ...currentState,
                   // @ts-expect-error
                   tagselected: tag.id,
-                })
+                }),
               );
             }}
           >
@@ -44,7 +44,7 @@ export const Tags = () => {
                   otherValue: "something",
                 },
               ],
-            })
+            }),
           );
         }}
       >

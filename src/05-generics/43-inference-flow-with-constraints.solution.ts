@@ -16,7 +16,7 @@ interface UseMutationOptions<TArgs extends any[], TReturn> {
 }
 
 export const useMutation = <TArgs extends any[], TReturn>(
-  opts: UseMutationOptions<TArgs, TReturn>
+  opts: UseMutationOptions<TArgs, TReturn>,
 ): UseMutationReturn<TArgs, TReturn> => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -55,7 +55,7 @@ mutation.mutate(
     throwOnError: true,
     // @ts-expect-error extra prop
     extra: "oh dear",
-  }
+  },
 );
 
 type test = [
@@ -67,12 +67,12 @@ type test = [
         user: { name: string; email: string },
         opts?: {
           throwOnError?: boolean;
-        }
+        },
       ) => Promise<{
         id: string;
         name: string;
         email: string;
       }>
     >
-  >
+  >,
 ];

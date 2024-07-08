@@ -11,7 +11,7 @@ interface ButtonGroupProps<TValue> {
 }
 
 const ButtonGroup = <TValue extends string>(
-  props: ButtonGroupProps<TValue>
+  props: ButtonGroupProps<TValue>,
 ) => {
   return (
     <div>

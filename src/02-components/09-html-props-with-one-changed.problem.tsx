@@ -2,7 +2,7 @@ import { ComponentProps } from "react";
 import { Equal, Expect } from "../helpers/type-utils";
 
 export const Input = (
-  props: ComponentProps<"input"> & { onChange: (value: string) => void }
+  props: ComponentProps<"input"> & { onChange: (value: string) => void },
 ) => {
   return (
     <input

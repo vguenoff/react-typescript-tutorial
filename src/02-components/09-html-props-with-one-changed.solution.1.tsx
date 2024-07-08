@@ -6,7 +6,7 @@ type Example = Omit<ComponentProps<"input">, "onChange">;
 export const Input = (
   props: Omit<ComponentProps<"input">, "onChange"> & {
     onChange: (value: string) => void;
-  }
+  },
 ) => {
   return (
     <input
